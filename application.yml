@@ -1,23 +1,15 @@
-﻿spring:
+spring:
   profiles:
     active:
     - dev
-   
 ---
-
-#开发环境
-spring
-  profiles: dev  
-  application:
-    name: microservicecloud-config-cincc-dev
-  
----
-
-#测试环境
 spring:
-  profiles: test  
-  application:
-    name: microservicecloud-config-cincc-test
- 
- 
- #文件一定要保存为UTF-8格式
+  profiles: dev     #开发环境
+  application: 
+    name: microservicecloud-config-atguigu-dev
+---
+spring:
+  profiles: test   #测试环境
+  application: 
+    name: microservicecloud-config-atguigu-test
+#  请保存为UTF-8格式
